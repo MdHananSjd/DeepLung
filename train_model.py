@@ -36,7 +36,7 @@ model = tf.keras.models.Sequential([
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Train Model
-history = model.fit(train_data, validation_data=val_data, epochs=14)
+history = model.fit(train_data, validation_data=val_data, epochs=13)
 
 # Save Model
 model.save("pneumonia_model.h5")

@@ -43,7 +43,7 @@ style.configure("TNotebook.Tab", padding=[10, 5], font=("Segoe UI", 12, "bold"))
 notebook = ttk.Notebook(root)
 notebook.pack(fill="both", expand=True, padx=10, pady=10)
 
-# --- Detection Tab ---
+
 detection_tab = tk.Frame(notebook, bg="#f0faff")
 notebook.add(detection_tab, text="🧪 Detection")
 
@@ -51,7 +51,7 @@ notebook.add(detection_tab, text="🧪 Detection")
 header = tk.Label(detection_tab, text="DeepLung: Pneumonia Detector", font=("Segoe UI", 26, "bold"), bg="#f0faff", fg="#003049")
 header.pack(pady=(30, 10))
 
-# Subheader
+
 subheader = tk.Label(detection_tab, text="Upload a chest X-ray image to predict pneumonia using AI", 
                      font=("Roboto", 14), bg="#f0faff", fg="#333")
 subheader.pack(pady=(0, 20))
@@ -82,10 +82,9 @@ credits_title = tk.Label(credits_tab, text="Credits", font=("Segoe UI", 24, "bol
 credits_title.pack(pady=(40, 10))
 
 dev_info = tk.Label(credits_tab, text=(
-    "Developed as part of a Semester Project\n\n"
+    "Developed as part of a Personal Project\n\n"
     "🧠 Model: CNN with TensorFlow\n"
     "🎨 GUI: Tkinter\n\n"
-    "👨‍💻 Developer: A passionate app dev \n"
     "Thank you for exploring this project!"
 ), font=("Roboto", 14), bg="#fff6f6", fg="#333", justify="left")
 dev_info.pack(pady=10)
